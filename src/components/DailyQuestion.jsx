@@ -19,7 +19,7 @@ export default function DailyQuestion() {
 
     const submitVote = async (targetUserId) => {
         const token = await auth.currentUser.getIdToken();
-        await fetch('https://your-backend-url/vote', {
+        await fetch('https://your-backend.onrender.com/vote', {
             method: 'POST',
             headers: {
                 Authorization: `Bearer ${token}`,
